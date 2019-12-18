@@ -70,8 +70,8 @@ def send_vagalumes_step(message):
     # genre = data['artist']['genre']
 
     bot.send_message(get_cid(message),
-                     "Artista: " + artist +
-                     "Gênero" + genre
+                     "Artista: " + artist
+                     # "Gênero" + genre
                      )
     bot.send_photo(get_cid(message), photo='https://www.vagalume.com.br/' + data['artist']['pic_medium'])
 
